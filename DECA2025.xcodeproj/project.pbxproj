@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C4CB9972D3F096600CED44F /* DECA2025App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CB9962D3F096600CED44F /* DECA2025App.swift */; };
+		2C4CB9992D3F096600CED44F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CB9982D3F096600CED44F /* ContentView.swift */; };
+		2C4CB99B2D3F096800CED44F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C4CB99A2D3F096800CED44F /* Assets.xcassets */; };
+		2C4CB99E2D3F096800CED44F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C4CB99D2D3F096800CED44F /* Preview Assets.xcassets */; };
+		2C4CB9A62D3F0A2400CED44F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2C4CB9A52D3F0A2400CED44F /* Alamofire */; };
+		2C4CB9A92D3F0A8F00CED44F /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 2C4CB9A82D3F0A8F00CED44F /* GoogleGenerativeAI */; };
+		2C4CB9AC2D3F0B0500CED44F /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CB9AB2D3F0B0500CED44F /* ChatBubble.swift */; };
+		2C4CB9AE2D3F0B1E00CED44F /* ChatServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CB9AD2D3F0B1E00CED44F /* ChatServiceModel.swift */; };
+		2C4CB9B02D3F0B4300CED44F /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CB9AF2D3F0B4300CED44F /* APIKey.swift */; };
+		2C4CB9B22D3F0B7400CED44F /* GenerativeAI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C4CB9B12D3F0B7400CED44F /* GenerativeAI-Info.plist */; };
+		2C4CB9B42D3F0B9B00CED44F /* TruistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CB9B32D3F0B9B00CED44F /* TruistView.swift */; };
+		2C4CB9B62D3F0BC600CED44F /* ChatBubbleCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CB9B52D3F0BC600CED44F /* ChatBubbleCorner.swift */; };
+		2C4CB9BC2D3F0C2D00CED44F /* Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C4CB9B82D3F0C2D00CED44F /* Regular.ttf */; };
+		2C4CB9BD2D3F0C2D00CED44F /* Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C4CB9B92D3F0C2D00CED44F /* Bold.ttf */; };
+		2C4CB9BE2D3F0C2D00CED44F /* Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C4CB9BA2D3F0C2D00CED44F /* Light.ttf */; };
+		2C4CB9BF2D3F0C2D00CED44F /* Xbold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C4CB9BB2D3F0C2D00CED44F /* Xbold.ttf */; };
+		2C4CB9C32D3F0F4900CED44F /* ZelleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CB9C22D3F0F4900CED44F /* ZelleViewModel.swift */; };
+		2C4CB9C52D3F0F5C00CED44F /* Keypad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CB9C42D3F0F5C00CED44F /* Keypad.swift */; };
+		2C4CB9C72D3F0F7C00CED44F /* KeypadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CB9C62D3F0F7C00CED44F /* KeypadView.swift */; };
+		2C4CB9C92D3F0FAC00CED44F /* CreditScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CB9C82D3F0FAC00CED44F /* CreditScoreView.swift */; };
+		2C4CB9CB2D3F0FD300CED44F /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CB9CA2D3F0FD300CED44F /* CreditCardView.swift */; };
+		2C4CB9CD2D3F0FFB00CED44F /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4CB9CC2D3F0FFB00CED44F /* AccountView.swift */; };
+		2CBF309D2D6AD2AE00B6D60E /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF309C2D6AD2AE00B6D60E /* MapModel.swift */; };
+		2CBF30A52D6AF26300B6D60E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBF30A42D6AF26300B6D60E /* WidgetKit.framework */; };
+		2CBF30A72D6AF26300B6D60E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBF30A62D6AF26300B6D60E /* SwiftUI.framework */; };
+		2CBF30AA2D6AF26300B6D60E /* Truist_WidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF30A92D6AF26300B6D60E /* Truist_WidgetsBundle.swift */; };
+		2CBF30AE2D6AF26300B6D60E /* Truist_Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF30AD2D6AF26300B6D60E /* Truist_Widgets.swift */; };
+		2CBF30B22D6AF26700B6D60E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF30B12D6AF26700B6D60E /* Assets.xcassets */; };
+		2CBF30B62D6AF26700B6D60E /* Truist WidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2CBF30A22D6AF26300B6D60E /* Truist WidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2CBF30BB2D6B024D00B6D60E /* Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C4CB9B92D3F0C2D00CED44F /* Bold.ttf */; };
+		2CBF30BC2D6B024F00B6D60E /* Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C4CB9BA2D3F0C2D00CED44F /* Light.ttf */; };
+		2CBF30BD2D6B025200B6D60E /* Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C4CB9B82D3F0C2D00CED44F /* Regular.ttf */; };
+		2CBF30BE2D6B025500B6D60E /* Xbold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C4CB9BB2D3F0C2D00CED44F /* Xbold.ttf */; };
+		2CBF30C02D6B051300B6D60E /* InsightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF30BF2D6B051300B6D60E /* InsightModel.swift */; };
+		2CBF30C12D6B074F00B6D60E /* InsightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF30BF2D6B051300B6D60E /* InsightModel.swift */; };
+		2CBF30C62D6BFB0100B6D60E /* MessageLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF30C52D6BFB0100B6D60E /* MessageLoadingView.swift */; };
+		2CBF30C82D6C001500B6D60E /* LoadingView.json in Resources */ = {isa = PBXBuildFile; fileRef = 2CBF30C72D6C001400B6D60E /* LoadingView.json */; };
+		2CBF30CB2D6C011200B6D60E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2CBF30CA2D6C011200B6D60E /* Lottie */; };
+		2CBF30CD2D6C012F00B6D60E /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF30CC2D6C012F00B6D60E /* LottieView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2CBF30B42D6AF26700B6D60E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C4CB98B2D3F096600CED44F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CBF30A12D6AF26300B6D60E;
+			remoteInfo = "Truist WidgetsExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2CBF30BA2D6AF26700B6D60E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2CBF30B62D6AF26700B6D60E /* Truist WidgetsExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2C4CB9932D3F096600CED44F /* DECA2025.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DECA2025.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C4CB9962D3F096600CED44F /* DECA2025App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DECA2025App.swift; sourceTree = "<group>"; };
+		2C4CB9982D3F096600CED44F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2C4CB99A2D3F096800CED44F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C4CB99D2D3F096800CED44F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2C4CB9AB2D3F0B0500CED44F /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
+		2C4CB9AD2D3F0B1E00CED44F /* ChatServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatServiceModel.swift; sourceTree = "<group>"; };
+		2C4CB9AF2D3F0B4300CED44F /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		2C4CB9B12D3F0B7400CED44F /* GenerativeAI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GenerativeAI-Info.plist"; sourceTree = "<group>"; };
+		2C4CB9B32D3F0B9B00CED44F /* TruistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruistView.swift; sourceTree = "<group>"; };
+		2C4CB9B52D3F0BC600CED44F /* ChatBubbleCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleCorner.swift; sourceTree = "<group>"; };
+		2C4CB9B82D3F0C2D00CED44F /* Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Regular.ttf; sourceTree = "<group>"; };
+		2C4CB9B92D3F0C2D00CED44F /* Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bold.ttf; sourceTree = "<group>"; };
+		2C4CB9BA2D3F0C2D00CED44F /* Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Light.ttf; sourceTree = "<group>"; };
+		2C4CB9BB2D3F0C2D00CED44F /* Xbold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Xbold.ttf; sourceTree = "<group>"; };
+		2C4CB9C22D3F0F4900CED44F /* ZelleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZelleViewModel.swift; sourceTree = "<group>"; };
+		2C4CB9C42D3F0F5C00CED44F /* Keypad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keypad.swift; sourceTree = "<group>"; };
+		2C4CB9C62D3F0F7C00CED44F /* KeypadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeypadView.swift; sourceTree = "<group>"; };
+		2C4CB9C82D3F0FAC00CED44F /* CreditScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreView.swift; sourceTree = "<group>"; };
+		2C4CB9CA2D3F0FD300CED44F /* CreditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
+		2C4CB9CC2D3F0FFB00CED44F /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		2C4CB9CE2D3F104400CED44F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2CBF309C2D6AD2AE00B6D60E /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
+		2CBF30A22D6AF26300B6D60E /* Truist WidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Truist WidgetsExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CBF30A42D6AF26300B6D60E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		2CBF30A62D6AF26300B6D60E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		2CBF30A92D6AF26300B6D60E /* Truist_WidgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Truist_WidgetsBundle.swift; sourceTree = "<group>"; };
+		2CBF30AD2D6AF26300B6D60E /* Truist_Widgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Truist_Widgets.swift; sourceTree = "<group>"; };
+		2CBF30B12D6AF26700B6D60E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CBF30B32D6AF26700B6D60E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CBF30BF2D6B051300B6D60E /* InsightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightModel.swift; sourceTree = "<group>"; };
+		2CBF30C52D6BFB0100B6D60E /* MessageLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageLoadingView.swift; sourceTree = "<group>"; };
+		2CBF30C72D6C001400B6D60E /* LoadingView.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LoadingView.json; sourceTree = "<group>"; };
+		2CBF30CC2D6C012F00B6D60E /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C4CB9902D3F096600CED44F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4CB9A62D3F0A2400CED44F /* Alamofire in Frameworks */,
+				2C4CB9A92D3F0A8F00CED44F /* GoogleGenerativeAI in Frameworks */,
+				2CBF30CB2D6C011200B6D60E /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CBF309F2D6AF26300B6D60E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CBF30A72D6AF26300B6D60E /* SwiftUI.framework in Frameworks */,
+				2CBF30A52D6AF26300B6D60E /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C4CB98A2D3F096600CED44F = {
+			isa = PBXGroup;
+			children = (
+				2C4CB9952D3F096600CED44F /* DECA2025 */,
+				2CBF30A82D6AF26300B6D60E /* Truist Widgets */,
+				2CBF30A32D6AF26300B6D60E /* Frameworks */,
+				2C4CB9942D3F096600CED44F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C4CB9942D3F096600CED44F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C4CB9932D3F096600CED44F /* DECA2025.app */,
+				2CBF30A22D6AF26300B6D60E /* Truist WidgetsExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C4CB9952D3F096600CED44F /* DECA2025 */ = {
+			isa = PBXGroup;
+			children = (
+				2C4CB9CE2D3F104400CED44F /* Info.plist */,
+				2C4CB9C02D3F0C5100CED44F /* Views */,
+				2C4CB9962D3F096600CED44F /* DECA2025App.swift */,
+				2C4CB9982D3F096600CED44F /* ContentView.swift */,
+				2C4CB99A2D3F096800CED44F /* Assets.xcassets */,
+				2CBF30C72D6C001400B6D60E /* LoadingView.json */,
+				2C4CB9B72D3F0C0B00CED44F /* Fonts */,
+				2C4CB9AA2D3F0AE800CED44F /* Gemini Assist */,
+				2C4CB99C2D3F096800CED44F /* Preview Content */,
+			);
+			path = DECA2025;
+			sourceTree = "<group>";
+		};
+		2C4CB99C2D3F096800CED44F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2C4CB99D2D3F096800CED44F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2C4CB9AA2D3F0AE800CED44F /* Gemini Assist */ = {
+			isa = PBXGroup;
+			children = (
+				2CBF30CC2D6C012F00B6D60E /* LottieView.swift */,
+				2C4CB9AB2D3F0B0500CED44F /* ChatBubble.swift */,
+				2C4CB9AD2D3F0B1E00CED44F /* ChatServiceModel.swift */,
+				2C4CB9AF2D3F0B4300CED44F /* APIKey.swift */,
+				2C4CB9B12D3F0B7400CED44F /* GenerativeAI-Info.plist */,
+				2C4CB9B32D3F0B9B00CED44F /* TruistView.swift */,
+				2CBF30C52D6BFB0100B6D60E /* MessageLoadingView.swift */,
+				2CBF309C2D6AD2AE00B6D60E /* MapModel.swift */,
+				2C4CB9B52D3F0BC600CED44F /* ChatBubbleCorner.swift */,
+			);
+			path = "Gemini Assist";
+			sourceTree = "<group>";
+		};
+		2C4CB9B72D3F0C0B00CED44F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2C4CB9B92D3F0C2D00CED44F /* Bold.ttf */,
+				2C4CB9BA2D3F0C2D00CED44F /* Light.ttf */,
+				2C4CB9B82D3F0C2D00CED44F /* Regular.ttf */,
+				2C4CB9BB2D3F0C2D00CED44F /* Xbold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		2C4CB9C02D3F0C5100CED44F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2C4CB9C12D3F0F3900CED44F /* Zelle */,
+				2C4CB9C82D3F0FAC00CED44F /* CreditScoreView.swift */,
+				2C4CB9CA2D3F0FD300CED44F /* CreditCardView.swift */,
+				2C4CB9CC2D3F0FFB00CED44F /* AccountView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2C4CB9C12D3F0F3900CED44F /* Zelle */ = {
+			isa = PBXGroup;
+			children = (
+				2C4CB9C22D3F0F4900CED44F /* ZelleViewModel.swift */,
+				2C4CB9C42D3F0F5C00CED44F /* Keypad.swift */,
+				2C4CB9C62D3F0F7C00CED44F /* KeypadView.swift */,
+			);
+			path = Zelle;
+			sourceTree = "<group>";
+		};
+		2CBF30A32D6AF26300B6D60E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CBF30A42D6AF26300B6D60E /* WidgetKit.framework */,
+				2CBF30A62D6AF26300B6D60E /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2CBF30A82D6AF26300B6D60E /* Truist Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				2CBF30A92D6AF26300B6D60E /* Truist_WidgetsBundle.swift */,
+				2CBF30AD2D6AF26300B6D60E /* Truist_Widgets.swift */,
+				2CBF30BF2D6B051300B6D60E /* InsightModel.swift */,
+				2CBF30B12D6AF26700B6D60E /* Assets.xcassets */,
+				2CBF30B32D6AF26700B6D60E /* Info.plist */,
+			);
+			path = "Truist Widgets";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C4CB9922D3F096600CED44F /* DECA2025 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C4CB9A12D3F096800CED44F /* Build configuration list for PBXNativeTarget "DECA2025" */;
+			buildPhases = (
+				2C4CB98F2D3F096600CED44F /* Sources */,
+				2C4CB9902D3F096600CED44F /* Frameworks */,
+				2C4CB9912D3F096600CED44F /* Resources */,
+				2CBF30BA2D6AF26700B6D60E /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CBF30B52D6AF26700B6D60E /* PBXTargetDependency */,
+			);
+			name = DECA2025;
+			packageProductDependencies = (
+				2C4CB9A52D3F0A2400CED44F /* Alamofire */,
+				2C4CB9A82D3F0A8F00CED44F /* GoogleGenerativeAI */,
+				2CBF30CA2D6C011200B6D60E /* Lottie */,
+			);
+			productName = DECA2025;
+			productReference = 2C4CB9932D3F096600CED44F /* DECA2025.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2CBF30A12D6AF26300B6D60E /* Truist WidgetsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CBF30B72D6AF26700B6D60E /* Build configuration list for PBXNativeTarget "Truist WidgetsExtension" */;
+			buildPhases = (
+				2CBF309E2D6AF26300B6D60E /* Sources */,
+				2CBF309F2D6AF26300B6D60E /* Frameworks */,
+				2CBF30A02D6AF26300B6D60E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Truist WidgetsExtension";
+			productName = "Truist WidgetsExtension";
+			productReference = 2CBF30A22D6AF26300B6D60E /* Truist WidgetsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C4CB98B2D3F096600CED44F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					2C4CB9922D3F096600CED44F = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					2CBF30A12D6AF26300B6D60E = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 2C4CB98E2D3F096600CED44F /* Build configuration list for PBXProject "DECA2025" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C4CB98A2D3F096600CED44F;
+			packageReferences = (
+				2C4CB9A42D3F0A2400CED44F /* XCRemoteSwiftPackageReference "Alamofire" */,
+				2C4CB9A72D3F0A8F00CED44F /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+				2CBF30C92D6C011200B6D60E /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
+			productRefGroup = 2C4CB9942D3F096600CED44F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C4CB9922D3F096600CED44F /* DECA2025 */,
+				2CBF30A12D6AF26300B6D60E /* Truist WidgetsExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C4CB9912D3F096600CED44F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4CB99E2D3F096800CED44F /* Preview Assets.xcassets in Resources */,
+				2C4CB9BD2D3F0C2D00CED44F /* Bold.ttf in Resources */,
+				2C4CB9BC2D3F0C2D00CED44F /* Regular.ttf in Resources */,
+				2C4CB9BE2D3F0C2D00CED44F /* Light.ttf in Resources */,
+				2CBF30C82D6C001500B6D60E /* LoadingView.json in Resources */,
+				2C4CB99B2D3F096800CED44F /* Assets.xcassets in Resources */,
+				2C4CB9BF2D3F0C2D00CED44F /* Xbold.ttf in Resources */,
+				2C4CB9B22D3F0B7400CED44F /* GenerativeAI-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CBF30A02D6AF26300B6D60E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CBF30BC2D6B024F00B6D60E /* Light.ttf in Resources */,
+				2CBF30BD2D6B025200B6D60E /* Regular.ttf in Resources */,
+				2CBF30BE2D6B025500B6D60E /* Xbold.ttf in Resources */,
+				2CBF30B22D6AF26700B6D60E /* Assets.xcassets in Resources */,
+				2CBF30BB2D6B024D00B6D60E /* Bold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C4CB98F2D3F096600CED44F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4CB9992D3F096600CED44F /* ContentView.swift in Sources */,
+				2CBF30CD2D6C012F00B6D60E /* LottieView.swift in Sources */,
+				2CBF30C62D6BFB0100B6D60E /* MessageLoadingView.swift in Sources */,
+				2C4CB9AC2D3F0B0500CED44F /* ChatBubble.swift in Sources */,
+				2C4CB9972D3F096600CED44F /* DECA2025App.swift in Sources */,
+				2C4CB9B42D3F0B9B00CED44F /* TruistView.swift in Sources */,
+				2CBF309D2D6AD2AE00B6D60E /* MapModel.swift in Sources */,
+				2C4CB9AE2D3F0B1E00CED44F /* ChatServiceModel.swift in Sources */,
+				2C4CB9C52D3F0F5C00CED44F /* Keypad.swift in Sources */,
+				2C4CB9C72D3F0F7C00CED44F /* KeypadView.swift in Sources */,
+				2C4CB9B62D3F0BC600CED44F /* ChatBubbleCorner.swift in Sources */,
+				2C4CB9B02D3F0B4300CED44F /* APIKey.swift in Sources */,
+				2C4CB9C32D3F0F4900CED44F /* ZelleViewModel.swift in Sources */,
+				2CBF30C02D6B051300B6D60E /* InsightModel.swift in Sources */,
+				2C4CB9C92D3F0FAC00CED44F /* CreditScoreView.swift in Sources */,
+				2C4CB9CD2D3F0FFB00CED44F /* AccountView.swift in Sources */,
+				2C4CB9CB2D3F0FD300CED44F /* CreditCardView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CBF309E2D6AF26300B6D60E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CBF30AE2D6AF26300B6D60E /* Truist_Widgets.swift in Sources */,
+				2CBF30AA2D6AF26300B6D60E /* Truist_WidgetsBundle.swift in Sources */,
+				2CBF30C12D6B074F00B6D60E /* InsightModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2CBF30B52D6AF26700B6D60E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CBF30A12D6AF26300B6D60E /* Truist WidgetsExtension */;
+			targetProxy = 2CBF30B42D6AF26700B6D60E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2C4CB99F2D3F096800CED44F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C4CB9A02D3F096800CED44F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C4CB9A22D3F096800CED44F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DECA2025/Preview Content\"";
+				DEVELOPMENT_TEAM = MQT74LZZD4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DECA2025/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Truist Banking";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hs.DECA2025;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		2C4CB9A32D3F096800CED44F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DECA2025/Preview Content\"";
+				DEVELOPMENT_TEAM = MQT74LZZD4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DECA2025/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Truist Banking";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hs.DECA2025;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		2CBF30B82D6AF26700B6D60E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MQT74LZZD4;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Truist Widgets/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Truist Widgets";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hs.DECA2025.Truist-Widgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		2CBF30B92D6AF26700B6D60E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MQT74LZZD4;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Truist Widgets/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Truist Widgets";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hs.DECA2025.Truist-Widgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C4CB98E2D3F096600CED44F /* Build configuration list for PBXProject "DECA2025" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C4CB99F2D3F096800CED44F /* Debug */,
+				2C4CB9A02D3F096800CED44F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C4CB9A12D3F096800CED44F /* Build configuration list for PBXNativeTarget "DECA2025" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C4CB9A22D3F096800CED44F /* Debug */,
+				2C4CB9A32D3F096800CED44F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CBF30B72D6AF26700B6D60E /* Build configuration list for PBXNativeTarget "Truist WidgetsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CBF30B82D6AF26700B6D60E /* Debug */,
+				2CBF30B92D6AF26700B6D60E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2C4CB9A42D3F0A2400CED44F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		2C4CB9A72D3F0A8F00CED44F /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/generative-ai-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.6;
+			};
+		};
+		2CBF30C92D6C011200B6D60E /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C4CB9A52D3F0A2400CED44F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C4CB9A42D3F0A2400CED44F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		2C4CB9A82D3F0A8F00CED44F /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C4CB9A72D3F0A8F00CED44F /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+		2CBF30CA2D6C011200B6D60E /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CBF30C92D6C011200B6D60E /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2C4CB98B2D3F096600CED44F /* Project object */;
+}
